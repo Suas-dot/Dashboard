@@ -1,0 +1,247 @@
+--- Column 30 ---
+Row 1 (Header): None
+Row 2 (Header): PERIODOS PARA EL SEGUIMIENTO
+Row 3 (Data): SEMESTRAL
+Row 4 (Data): SEMESTRAL
+
+--- Column 31 ---
+Row 1 (Header): None
+Row 2 (Header): MEDICO
+Row 3 (Data): DIANA SALAZAR
+Row 4 (Data): FAUSTO LALALEO 
+
+--- Column 32 ---
+Row 1 (Header): None
+Row 2 (Header): STATUS
+Row 3 (Data): ALTA
+Row 4 (Data): SEGUIMIENTO
+
+--- Column 33 ---
+Row 1 (Header): Restricción / Acc. Inmediatas
+Row 2 (Header): No levantar cargar > a 5 kg.
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 34 ---
+Row 1 (Header): None
+Row 2 (Header): No levantar cargar > a 15 kg.2
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 35 ---
+Row 1 (Header): None
+Row 2 (Header): No empuje / tracción.
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 36 ---
+Row 1 (Header): None
+Row 2 (Header): No manejo de maquinaria / equipos  (elevadores)
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 37 ---
+Row 1 (Header): None
+Row 2 (Header): No realizar actividades de movimientos repetitivos
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 38 ---
+Row 1 (Header): None
+Row 2 (Header): No flexión, torsión repetitiva de columna lumbar.
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 39 ---
+Row 1 (Header): None
+Row 2 (Header): No permanecer de pie o sentado por +60 min. continuos sin pausas laborales
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 40 ---
+Row 1 (Header): None
+Row 2 (Header): Evitar subir y bajar gradas frecuentemente
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 41 ---
+Row 1 (Header): None
+Row 2 (Header): No realizar trabajos en altura
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 42 ---
+Row 1 (Header): None
+Row 2 (Header): Evitar trabajo en superficies irregulares o con vibración.
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 43 ---
+Row 1 (Header): None
+Row 2 (Header): No exposicion a Químicos
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 44 ---
+Row 1 (Header): None
+Row 2 (Header): No exposición a ruido
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 45 ---
+Row 1 (Header): None
+Row 2 (Header): No exposición material particulador
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 46 ---
+Row 1 (Header): None
+Row 2 (Header): Evitar exposición solar
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 47 ---
+Row 1 (Header): None
+Row 2 (Header): No realizar trabajos nocturnos 
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 48 ---
+Row 1 (Header): None
+Row 2 (Header): Bajar de peso
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 49 ---
+Row 1 (Header): None
+Row 2 (Header): No toma de decisiones
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 50 ---
+Row 1 (Header): None
+Row 2 (Header): No deportes de alto impacto.
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 51 ---
+Row 1 (Header): Acc. Medio Plazo
+Row 2 (Header): Valorar tratamiento Quirúrgico 
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 52 ---
+Row 1 (Header): None
+Row 2 (Header): Tratamiento médico especialista
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 53 ---
+Row 1 (Header): None
+Row 2 (Header): Realizar Fisioterapia rehabilitadora
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 54 ---
+Row 1 (Header): None
+Row 2 (Header): Realizar Fisioterapia para fortalecimiento muscular
+Row 3 (Data): False
+Row 4 (Data): True
+
+--- Column 55 ---
+Row 1 (Header): None
+Row 2 (Header): Movilizar a puesto de trabajo que no realice tareas restringidas.
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 56 ---
+Row 1 (Header): None
+Row 2 (Header): Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).
+Row 3 (Data): False
+Row 4 (Data): False
+
+--- Column 57 ---
+Row 1 (Header): Acc. Definitivas
+Row 2 (Header): Desvinculación
+Row 3 (Data): False
+Row 4 (Data): True
+
+--- Column 58 ---
+Row 1 (Header): None
+Row 2 (Header): FECHA DE PROXIMA ATENCION2
+Row 3 (Data): 2019-10-23 00:00:00
+Row 4 (Data): 2024-06-03 00:00:00
+
+--- Column 59 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 1
+Row 3 (Data): Trabajador de 33 años de edad que labora 5 años en la empresa, sufrio accidente de trabajo el 15 de mayo del 2019, sufre trauma de los dedos de la mano izquierda siendo amputado en el hospital IESS los dedos indice, medio, anular a nivel de la articulacion metacarpo-falangica y el dedo meñique a nivel del tercio distal de la primera falange.
+Row 4 (Data): 21/11/2022:  COLABORADOR DEL ÁREA DE INYECCIÓN AL CORTE, QUIEN SE ENCUENTRA CURSANDO PATOLOGÍA MUSCULOESQUELETICA DE HOMBROS BILATERAL,  SE REALIZÓ LA MOVILIZACIÓN DEL PUESTO DE BANDA DE EMPAQUE Y TERMINADO CIC AL PUESTO DE SEPARACIÓN DE PVC EN EL MES DE MAYO 2022. AL MOMENTO PACIENTE CLÍNICAMENTE EN MEJORES CONDICIONES A LAS INICIALES, SIN EMBARGO ECOGRÁFICAMENTE MANTIENE LESIONES EN LOS DOS HOMBROS Y MANO DERECHA, POR LO CUAL TIENE PENDIENTE REALIZAR UN NUEVO CICLO DE FISIOTERAPIA PISA ASÍ COMO CONTROL POR TRAUMATOLOGÍA IESS EN EL MES DE DICIEMBRE.
+RAZÓN POR LA CUAL SE DEBERÁ MANTENER AL TRABAJADOR POR 4 MESES MÁS EN ACTIVIDADES DE SEPARACIÓN DE PVC. 
+
+--- Column 60 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 2
+Row 3 (Data): 22/11/2019  Paciente termina la fisioterapia. Realiza pinza con meñique y pulgar, sensibilidad conservada, piel del muñon sin signos de inflamacion. No refiere dolor del muñon. Se recomienda continuar como apoyo en el area.
+Row 4 (Data): 3/1/2024 POR SOLICITUD DE GESTION HUMANA SE REVISA LA HISTORIA CLINICA DEL COLABORADOR,  LABORA 13 AÑOS EN LA EMPRESA, INICIALMNTE EN EL AREA DE OJALILLADO Y EMPIOLADO Y POSTERIORMENTE EN LONA, PRESENTA DOLOR DE HOMBROS DESDE EL 2017, DONDE FUE TRATADO CON MEDICACION Y FISIOTERAPIA, EN EL 2022 SE CAMBIA DE AREA DE LONA A SEPARACION DE PVC DONDE REALIZA ACTIVIDADES CON LA TIJERA DONDE SE HA MANTENIDO HASTA LA ACTUALIDAD. ACTUALMENTE EL COLABORADOR REGRESARA A SU AREA DE ORIGEN AL PUESTO DE ABASTECEDOR DONDE REALIZARA LAS SIGUIENTES ACTIVIDADES: 1- EMPUJAR LOS COCHES DE ZAPATILLAS DESDE LAS MAQUINAS HACIA LA BANDA DE TERMINADO, 2-EMPUJAR DE REGRESO LOS COCHES VACIOS DESDE LA BANDA DE TERMINADO A LAS MAQUINAS, 3- IMPRIMIR LAS ETIQUETAS PARA COLOCARLAS EN LA PARTE POSTERIOR DE LAS ZAPATILLAS, 4- COLOCAR LOS PRECIOS EN LAS ZAPATILLAS. DEBE LIMITARSE HA REALIZAR UNICA Y EXCLUSIVAMENTE ESTAS ACTIVIDADES DURANTE LAS 8 HORAS DE TRABAJO, DE MANERA INDEFINIDA. EL COLABORADOR PRACTICA DANSA DONDE REALIZA LEVANTAMIENTO DE PERSONAS PARA LOS PASOS DEL BAILE.
+
+--- Column 61 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 3
+Row 3 (Data): 04/01/2020  Ha terminado la fisioterapia se dio el alta, Psiclogia indica  encontrarse emocionalmente estable, y por criterio medico puede realizar suas actividades habituales.
+Row 4 (Data): 30/08/2025 CONTINUAR EN EL PUESTO ACTUAL DE ABASTECEDOR CON LAS ACTIVIDADES DESCRITAS. 1- EMPUJAR LOS COCHES DE ZAPATILLAS DESDE LAS MAQUINAS HACIA LA BANDA DE TERMINADO, 2-EMPUJAR DE REGRESO LOS COCHES VACIOS DESDE LA BANDA DE TERMINADO A LAS MAQUINAS, 3- IMPRIMIR LAS ETIQUETAS PARA COLOCARLAS EN LA PARTE POSTERIOR DE LAS ZAPATILLAS, 4- COLOCAR LOS PRECIOS EN LAS ZAPATILLAS. DEBE LIMITARSE HA REALIZAR UNICA Y EXCLUSIVAMENTE ESTAS ACTIVIDADES DURANTE LAS 8 HORAS DE TRABAJO, DE MANERA INDEFINIDA. EL COLABORADOR PRACTICA DANSA DONDE REALIZA LEVANTAMIENTO DE PERSONAS PARA LOS PASOS DEL BAILE.
+
+--- Column 62 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 4
+Row 3 (Data): 03/05/2022: Paciente estable, psicologicamente no superapor la vergüenza que demuestra ante la ausencia de su mano pero el muñon se encuentra estable, sin signos de infeccion.
+Row 4 (Data): 30/09/2025 EL COLABORADOR PRACTICA DANSA DONDE REALIZA LEVANTAMIENTO DE PERSONAS PARA LOS PASOS DEL BAILE. SE RECOMIENDA NO REALIZAR ESTA ACTIVIDAD YA QUE REAGUDIZA LA PATOLOGIA MUSCULOESQUELETICA DE LOS HOMBROS.
+
+--- Column 63 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 5
+Row 3 (Data): None
+Row 4 (Data): None
+
+--- Column 64 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 6
+Row 3 (Data): None
+Row 4 (Data): None
+
+--- Column 65 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 7
+Row 3 (Data): None
+Row 4 (Data): None
+
+--- Column 66 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 8
+Row 3 (Data): None
+Row 4 (Data): None
+
+--- Column 67 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 9
+Row 3 (Data): None
+Row 4 (Data): None
+
+--- Column 68 ---
+Row 1 (Header): None
+Row 2 (Header): SEGUIMIENTO 10
+Row 3 (Data): None
+Row 4 (Data): None
+
+--- Column 69 ---
+Row 1 (Header): None
+Row 2 (Header): None
+Row 3 (Data): None
+Row 4 (Data): None
+
+--- Column 70 ---
+Row 1 (Header): None
+Row 2 (Header): None
+Row 3 (Data): None
+Row 4 (Data): None
+

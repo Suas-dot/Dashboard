@@ -366,7 +366,13 @@ function showDetails(empleado) {
         </div>
         <div class="detail-row">
             <div class="detail-label">Restricciones:</div>
-            <div class="detail-value">${empleado.restricciones}</div>
+            <div class="detail-value">
+                ${empleado.restriccionesLista && empleado.restriccionesLista.length > 0
+            ? `<ul style="margin: 0; padding-left: 20px;">
+                        ${empleado.restriccionesLista.map(r => `<li>${r}</li>`).join('')}
+                       </ul>`
+            : empleado.restricciones}
+            </div>
         </div>
     `;
 
@@ -407,23 +413,37 @@ function exportToExcel() {
             return;
         }
 
+        // Obtener claves de restricciones detalladas (del primer empleado)
+        const restrictionKeys = empleadosFiltrados.length > 0 && empleadosFiltrados[0].restriccionesDetalle
+            ? Object.keys(empleadosFiltrados[0].restriccionesDetalle)
+            : [];
+
         // Preparar datos para exportar con TODOS los campos
-        const dataToExport = empleadosFiltrados.map(emp => ({
-            'Código': emp.codigo,
-            'Nombre Completo': emp.nombre,
-            'Tipo de Restricción': emp.tipoRestriccion,
-            'Área': emp.area,
-            'Gerencia': emp.gerencia,
-            'Puesto de Trabajo': emp.puesto || 'No especificado',
-            'Género': emp.genero || 'No especificado',
-            'Edad': emp.edad || 'N/A',
-            'Fecha Ingreso': emp.fechaIngreso !== 'N/A' ? formatDate(emp.fechaIngreso) : 'N/A',
-            'Fecha Inicio Restricción': formatDate(emp.fechaInicio),
-            'Fecha Fin Restricción': emp.fechaFin ? formatDate(emp.fechaFin) : 'Indefinida',
-            'Discapacidad': emp.discapacidad || 'No',
-            'Diagnóstico': emp.diagnostico || 'No especificado',
-            'Restricciones': emp.restricciones || 'No especificado'
-        }));
+        const dataToExport = empleadosFiltrados.map(emp => {
+            const row = {
+                'Código': emp.codigo,
+                'Nombre Completo': emp.nombre,
+                'Tipo de Restricción': emp.tipoRestriccion,
+                'Área': emp.area,
+                'Gerencia': emp.gerencia,
+                'Puesto de Trabajo': emp.puesto || 'No especificado',
+                'Género': emp.genero || 'No especificado',
+                'Edad': emp.edad || 'N/A',
+                'Fecha Ingreso': emp.fechaIngreso !== 'N/A' ? formatDate(emp.fechaIngreso) : 'N/A',
+                'Fecha Inicio Restricción': formatDate(emp.fechaInicio),
+                'Fecha Fin Restricción': emp.fechaFin ? formatDate(emp.fechaFin) : 'Indefinida',
+                'Discapacidad': emp.discapacidad || 'No',
+                'Diagnóstico': emp.diagnostico || 'No especificado',
+                'Resumen Restricciones': emp.restricciones || 'No especificado'
+            };
+
+            // Agregar columnas detalladas
+            restrictionKeys.forEach(key => {
+                row[key] = emp.restriccionesDetalle && emp.restriccionesDetalle[key] ? 'VERDADERO' : 'FALSO';
+            });
+
+            return row;
+        });
 
         console.log('Datos preparados:', dataToExport.length, 'registros');
 
@@ -433,8 +453,8 @@ function exportToExcel() {
         // Crear hoja de datos
         const ws = XLSX.utils.json_to_sheet(dataToExport);
 
-        // Ajustar ancho de columnas
-        const colWidths = [
+        // Ajustar ancho de columnas base
+        const baseColWidths = [
             { wch: 10 },  // Código
             { wch: 35 },  // Nombre Completo
             { wch: 18 },  // Tipo de Restricción
@@ -448,9 +468,13 @@ function exportToExcel() {
             { wch: 18 },  // Fecha Fin Restricción
             { wch: 15 },  // Discapacidad
             { wch: 40 },  // Diagnóstico
-            { wch: 50 }   // Restricciones
+            { wch: 50 },  // Resumen Restricciones
         ];
-        ws['!cols'] = colWidths;
+
+        // Agregar anchos para columnas dinámicas (aprox 20 chars)
+        const dynamicColWidths = restrictionKeys.map(() => ({ wch: 25 }));
+
+        ws['!cols'] = [...baseColWidths, ...dynamicColWidths];
 
         // Agregar hoja al libro
         XLSX.utils.book_append_sheet(wb, ws, 'Restricciones Laborales');

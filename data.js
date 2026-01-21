@@ -11,12 +11,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2014-03-10",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MANTENIMIENTO DE PLANTAS",
+        diagnostico: "Trabajador de 33 años de edad que labora 5 años en la empresa, sufrio accidente de trabajo el 15 de mayo del 2019, sufre trauma de los dedos de la mano izquierda siendo amputado en el hospital IESS...",
+        restricciones: "Sin restricciones específicas registradas (Limitación definitiva)",
         genero: "Masculino",
         edad: "40",
         puesto: "TECNICO DE MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: [],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4815",
@@ -26,12 +28,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-02-15",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "21/11/2022:  COLABORADOR DEL ÁREA DE INYECCIÓN AL CORTE, QUIEN SE ENCUENTRA CURSANDO PATOLOGÍA MUSCULOESQUELETICA DE HOMBROS BILATERAL,  SE REALIZÓ LA MOVILIZACIÓN DEL PUESTO DE BANDA DE EMPAQUE Y ...",
+        restricciones: "Realizar Fisioterapia para fortalecimiento muscular, Desvinculación",
         genero: "Masculino",
         edad: "40",
         puesto: "ABASTECEDOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["Realizar Fisioterapia para fortalecimiento muscular", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "2521",
@@ -41,12 +45,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2004-08-17",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "27/05/2022 CONTINUAR LABORANDO EN DIVIDIDO EVA , NO MANIPULAR CARGAS",
+        restricciones: "No levantar cargar > a 15 kg.2, No realizar actividades de movimientos repetitivos, No flexión, torsión repetitiva de columna lumbar., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Desvinculación",
         genero: "Masculino",
         edad: "47",
         puesto: "UNTADO PEGA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No realizar actividades de movimientos repetitivos", "No flexión, torsión repetitiva de columna lumbar.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "2455",
@@ -56,12 +62,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2002-02-14",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MANTENIMIENTO DE PLANTAS",
+        diagnostico: "SE ACOMPAÑA A TRABAJADOR AL IESS PARA LA VALORACIÓN INICIAL",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "46",
         puesto: "OBRERO DE MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "3443",
@@ -71,12 +79,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2009-11-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "10/08/2018: paciente con evolución favorable al momento sin dolor sin embargo pasa hacer una restriccion definitiva por molestias en brazo y espalda",
+        restricciones: "No levantar cargar > a 15 kg.2, No flexión, torsión repetitiva de columna lumbar., Tratamiento médico especialista, Realizar Fisioterapia para fortalecimiento muscular",
         genero: "Masculino",
         edad: "44",
         puesto: "BANDA DE TERMINADO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No flexión, torsión repetitiva de columna lumbar.", "Tratamiento médico especialista", "Realizar Fisioterapia para fortalecimiento muscular"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4698",
@@ -86,12 +96,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-02-02",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALIDAD EN PLANTA",
+        diagnostico: "21/6/2019 NO REALIZAR MMC CON MANO IZQUIERDA DE MANERA INDEFINIDA, LABORAR EN CONTROL DE CALIDAD",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "35",
         puesto: "EXTRUSOR",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2755",
@@ -101,12 +113,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2007-03-15",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "trabajador estable sin dolor pero debe mantener las restricciones médicas indicadas de no levantamiento manual de carga por encima de 9 kilos",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "41",
         puesto: "AUXILIAR DE PISO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4006",
@@ -116,12 +130,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-08-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "EL COLABORADOR SE ENCUENTRA EN LA BANDA DE TERMINADO LONA , DONDE REALIZA MOVIMIENTOS REPETITIVOS, SE RECOMIENDA REALIZAR PAUSAS.",
+        restricciones: "No levantar cargar > a 15 kg.2, No deportes de alto impacto., Realizar Fisioterapia rehabilitadora, Desvinculación",
         genero: "Masculino",
         edad: "39",
         puesto: "TERMINADO LONA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No deportes de alto impacto.", "Realizar Fisioterapia rehabilitadora", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "3895",
@@ -131,12 +147,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-06-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "PENDIENTE ECOGRAFÍA DE HOMBRO",
+        restricciones: "No manejo de maquinaria / equipos  (elevadores), No exposición a ruido, No toma de decisiones, No deportes de alto impacto., Realizar Fisioterapia rehabilitadora, Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "46",
         puesto: "BANDA DE TERMINADO",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No manejo de maquinaria / equipos  (elevadores)", "No exposición a ruido", "No toma de decisiones", "No deportes de alto impacto.", "Realizar Fisioterapia rehabilitadora", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2710",
@@ -146,12 +164,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2006-12-12",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "2019-03-06 00:00:00",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "42",
         puesto: "INYECTOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "5315",
@@ -161,12 +181,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2013-01-02",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "CONTINUAR EN APARDO, NO LEVANTAR PESO",
+        restricciones: "No levantar cargar > a 15 kg.2, No realizar actividades de movimientos repetitivos, No flexión, torsión repetitiva de columna lumbar., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Desvinculación",
         genero: "Masculino",
         edad: "34",
         puesto: "APARADO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No realizar actividades de movimientos repetitivos", "No flexión, torsión repetitiva de columna lumbar.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "6014",
@@ -176,12 +198,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2014-10-20",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "se resalizará en proxima visita",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "39",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2757",
@@ -191,12 +215,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2007-03-22",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "01/04/2019 Trabajador trae una nueva RMN la misma que indica espondiloartrosis + protrusiones didcales + antecedentes de cirugpia anterior por lo que se decide mantener con restricciones definitiva...",
+        restricciones: "No levantar cargar > a 5 kg., No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "51",
         puesto: "ABASTECEDOR DE PRODUCTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2051",
@@ -206,12 +232,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "1986-04-16",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "se descarta enfermedad relacionada con la actividad laboral y se cierra el procedimiento de investigación de enfermedad al momento su cuadro esta relacionado con un proceso alérgico que fue manejad...",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), No realizar actividades de movimientos repetitivos, No flexión, torsión repetitiva de columna lumbar., Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No exposicion a Químicos, No exposición material particulador, No realizar trabajos nocturnos, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "59",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "39"
+        discapacidad: "39",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar actividades de movimientos repetitivos", "No flexión, torsión repetitiva de columna lumbar.", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No exposicion a Químicos", "No exposición material particulador", "No realizar trabajos nocturnos", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": true, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "5397",
@@ -221,12 +249,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2013-03-07",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "10/07/2018  Alta con las indicaciones iniciales, control semestral.",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "35",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "2090",
@@ -236,12 +266,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "1990-07-23",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "15/07/2019:ACUDE POR SEGUMIENTO DE RESTRICCIONES.  SE REVISA RX CONSTATANDOSE DESGASTE ARTICULAR DE CADERA DERECHA, IZQUIERDA EN MEHORN GRADO Y RODILLA DERECHA, SE RECOMIENDA LA VALORACION TRAUMATO...",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Valorar tratamiento Quirúrgico, Tratamiento médico especialista, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "59",
         puesto: "BANDA DE TERMINADO",
-        discapacidad: "35"
+        discapacidad: "35",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Valorar tratamiento Quirúrgico", "Tratamiento médico especialista", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": true, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4905",
@@ -251,12 +283,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-04-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "PACIENTE NOPRESENTA MOLESTIA ALGUNA DE LA REGION LUMBAR , SE RECOMIENDA CONTINUAR EN DESTALLADO.",
+        restricciones: "No levantar cargar > a 5 kg., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Desvinculación",
         genero: "Masculino",
         edad: "45",
         puesto: "DESTALLADOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "4024",
@@ -266,12 +300,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-09-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "14/05/2019 Paciente asintomatica,se recomienda mantener las restriccoines medicas",
+        restricciones: "No levantar cargar > a 15 kg.2, No flexión, torsión repetitiva de columna lumbar., No exposicion a Químicos, No exposición material particulador, No realizar trabajos nocturnos, Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista",
         genero: "Femenino",
         edad: "54",
         puesto: "SERVICIOS",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No flexión, torsión repetitiva de columna lumbar.", "No exposicion a Químicos", "No exposición material particulador", "No realizar trabajos nocturnos", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": true, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4314",
@@ -281,12 +317,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2011-09-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "36",
         puesto: "AUXILIAR DE PISO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4186",
@@ -296,12 +334,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2011-05-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "47",
         puesto: "DESPACHADOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2208",
@@ -311,12 +351,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "1997-05-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "31/08/2021: LIMITAR ACTIVIDADES QUE DEMANDEN: - MANIPULACION MANUAL DE CARGAS CON PESO SUPERIOR A 5 KG. ASI COMO EL TRANSPORTE MECANICO DE CARGAS POR EMPUJE Y TRACCION.",
+        restricciones: "No levantar cargar > a 15 kg.2, No flexión, torsión repetitiva de columna lumbar., No deportes de alto impacto., Realizar Fisioterapia para fortalecimiento muscular, Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "56",
         puesto: "BANDA DE TERMINADO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No flexión, torsión repetitiva de columna lumbar.", "No deportes de alto impacto.", "Realizar Fisioterapia para fortalecimiento muscular", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "4049",
@@ -326,12 +368,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-10-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "30/08/2021: PACIENTE ESTABLE, AL MOMENTO REFIERE LESIONES DERMICAS  EN MANOS.  SE ENVIA TTO.",
+        restricciones: "No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, No exposición a ruido, No toma de decisiones, No deportes de alto impacto., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "43",
         puesto: "TERMINADO LONA",
-        discapacidad: "Mental"
+        discapacidad: "Mental",
+        restriccionesLista: ["No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "No exposición a ruido", "No toma de decisiones", "No deportes de alto impacto.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "5452",
@@ -341,12 +385,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2013-05-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "3/11/2021: PACIENTE AL MOMENTO ESTABLE, ULTIMO CONTROL ONCOLOGICO FAVORABLE. PRESENTA PATOLOGIA DE COLUMNA LUMBAR, LO CUAL LIMITA LA MMC. AL MOMENTO ASINTOMATICO.",
+        restricciones: "No levantar cargar > a 5 kg., No manejo de maquinaria / equipos  (elevadores), No flexión, torsión repetitiva de columna lumbar., No realizar trabajos en altura, No toma de decisiones, No deportes de alto impacto., Realizar Fisioterapia para fortalecimiento muscular, Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "42",
         puesto: "TERMINADO LONA",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No manejo de maquinaria / equipos  (elevadores)", "No flexión, torsión repetitiva de columna lumbar.", "No realizar trabajos en altura", "No toma de decisiones", "No deportes de alto impacto.", "Realizar Fisioterapia para fortalecimiento muscular", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4017",
@@ -356,12 +402,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-09-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "27/08/2021: PACIENTE DADA DE ALTA POR CUADRO DE COVID, AL MOMENTO ESTABLE SIN SECUELAS.",
+        restricciones: "No levantar cargar > a 15 kg.2, No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, No exposición a ruido, No toma de decisiones, No deportes de alto impacto., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Femenino",
         edad: "45",
         puesto: "TERMINADO LONA",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "No exposición a ruido", "No toma de decisiones", "No deportes de alto impacto.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4780",
@@ -371,12 +419,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-02-15",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "41",
         puesto: "BANDA DE TERMINADO",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "4018",
@@ -386,12 +436,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-09-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "03/11/2021: PACIENTE AL MOMENTO ESTABLE, REFIERE LEVE DOLOR DE HOMBRO OCASIONAL EN RELACION A ESFURZO Y ACTIVIDAD REPETITIVA.",
+        restricciones: "No levantar cargar > a 15 kg.2, No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, No exposición a ruido, No toma de decisiones, No deportes de alto impacto., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Femenino",
         edad: "42",
         puesto: "TERMINADO LONA",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "No exposición a ruido", "No toma de decisiones", "No deportes de alto impacto.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4118",
@@ -401,12 +453,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-12-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "03/11/2021:  PACIENTE AL MOMENTO ESTABLE DE DISCAPACIDAD PERO CURSANDO TENOSINOVITIS DE MANO DERECHA POR LO CUAL SE EMITE TRANSFERENCIA A FISIOTERAPIA PISA POR 15 SESIONES.",
+        restricciones: "No levantar cargar > a 5 kg., No manejo de maquinaria / equipos  (elevadores), No flexión, torsión repetitiva de columna lumbar., No realizar trabajos en altura, No toma de decisiones, No deportes de alto impacto., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "35",
         puesto: "OBRERO DE MANTENIMIENTO",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No manejo de maquinaria / equipos  (elevadores)", "No flexión, torsión repetitiva de columna lumbar.", "No realizar trabajos en altura", "No toma de decisiones", "No deportes de alto impacto.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4692",
@@ -416,12 +470,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-02-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "15/11/2021: SE VALORA EN PREVENTIVA 2021. PERSONAL CON DISCAPACIDAD INTELECTUAL , SE CONSIDERA POBLACION VULNERABLE. NO OPERAR MAQUINARIA. NO MOVILIZAR A OTRO PUESTO DE TRABAJO SIN PREVIA VALORACION.",
+        restricciones: "No levantar cargar > a 15 kg.2, No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, No toma de decisiones, No deportes de alto impacto., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "41",
         puesto: "TERMINADO LONA",
-        discapacidad: "Intelectual"
+        discapacidad: "Intelectual",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "No toma de decisiones", "No deportes de alto impacto.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4085",
@@ -431,12 +487,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-11-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "23/9/2021: PACIENTE REFIERE PARESTECIAS DE MANOS SIN CAUSA APARENTE",
+        restricciones: "No levantar cargar > a 5 kg., No levantar cargar > a 15 kg.2, No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), No realizar actividades de movimientos repetitivos, No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No realizar trabajos nocturnos, No toma de decisiones, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "55",
         puesto: "TERMINADO PLASTICO",
-        discapacidad: "Visual"
+        discapacidad: "Visual",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar actividades de movimientos repetitivos", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No realizar trabajos nocturnos", "No toma de decisiones", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "2452",
@@ -446,12 +504,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2002-01-28",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "04/11/2021: PACIENTE ASINOMAICO, NO REFIERE MOLESTIAS, SE VAORARA EN 6 MESES.",
+        restricciones: "No levantar cargar > a 15 kg.2, No flexión, torsión repetitiva de columna lumbar., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Desvinculación",
         genero: "Masculino",
         edad: "44",
         puesto: "INYECTOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No flexión, torsión repetitiva de columna lumbar.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "2195",
@@ -461,12 +521,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "1997-03-04",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "16/11/2020: LABORA EN LA EMPRESA 23 AÑOS : - INYECCION LONA 23 47 AÑOS DE EDAD: APP: TRAUMA ACUSTICO BILATERAL LEVE, ESCOLIOSIS LUMBAR, OSTEOFITOS, REDUCCION DISCAL LUMBAR. HEMORROIDES, TRAUMATISMO...",
+        restricciones: "No levantar cargar > a 15 kg.2, No flexión, torsión repetitiva de columna lumbar., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia para fortalecimiento muscular, Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "53",
         puesto: "INYECTOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No flexión, torsión repetitiva de columna lumbar.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia para fortalecimiento muscular", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2115",
@@ -476,12 +538,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "1991-04-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "2021-11-10 00:00:00",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "59",
         puesto: "BANDA DE TERMINADO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2418",
@@ -491,12 +555,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2001-08-17",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "51",
         puesto: "ABASTECEDOR DE PRODUCTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2276",
@@ -506,12 +572,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2000-02-14",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "52",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "3005",
@@ -521,12 +589,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2007-10-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "38",
         puesto: "AUXILIAR DE PISO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "3559",
@@ -536,12 +606,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-01-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "36",
         puesto: "ALIMENTADOR DE BANDA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "4956",
@@ -551,12 +623,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2012-06-20",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "40",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "3901",
@@ -566,12 +640,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2010-06-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "39",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "Visual"
+        discapacidad: "Visual",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "5896",
@@ -581,12 +657,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2014-01-23",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "17",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "42",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "2175",
@@ -596,12 +674,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "1996-06-05",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "SALIDO",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Valorar tratamiento Quirúrgico, Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "60",
         puesto: "OBRERO DE MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Valorar tratamiento Quirúrgico", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": true, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "2415",
@@ -611,12 +691,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2001-08-03",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Valorar tratamiento Quirúrgico, Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "49",
         puesto: "OBRERO DE MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Valorar tratamiento Quirúrgico", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": true, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "6681",
@@ -626,12 +708,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2019-12-23",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "CONTINUAR EN APARADO , NO REALIZAR MANIPULACION DE CARGAS",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No realizar actividades de movimientos repetitivos, No flexión, torsión repetitiva de columna lumbar., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Desvinculación",
         genero: "Masculino",
         edad: "31",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No realizar actividades de movimientos repetitivos", "No flexión, torsión repetitiva de columna lumbar.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "5352",
@@ -641,12 +725,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2013-02-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "CONTINUAR EN MONTAJE , SIN REALIZAR MANIPULACION DE CARGAS",
+        restricciones: "No levantar cargar > a 5 kg., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Desvinculación",
         genero: "Masculino",
         edad: "45",
         puesto: "OBRERO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "4772",
@@ -656,12 +742,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-02-15",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "CONTINUAR EN APARADO , NO REALIZAR MANIPULACION DE CARGAS, NO EXPONERSE A POLVOS, GASES",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No realizar trabajos nocturnos, Valorar tratamiento Quirúrgico, Tratamiento médico especialista",
         genero: "Masculino",
         edad: "51",
         puesto: "LIDER A",
-        discapacidad: "Visual"
+        discapacidad: "Visual",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No realizar trabajos nocturnos", "Valorar tratamiento Quirúrgico", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": true, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "5690",
@@ -671,12 +759,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2013-07-22",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO INYECTADO AL CORTE",
+        diagnostico: "23/11/2022: SE EMITE EL ALTA DE RESTRICCIONES TEMPORALES Y SE PASA A LIMITACIONES DEFINITIVAS. POR PATOLOGIS DE COLUMNA LUMBAR Y HOMBRO DERECHO  LIMITACIONES: NO REALIZAR ACTIVIDADES QUE DEMANDEN M...",
+        restricciones: "No levantar cargar > a 15 kg.2, No flexión, torsión repetitiva de columna lumbar., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Desvinculación",
         genero: "Masculino",
         edad: "40",
         puesto: "INYECTOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No flexión, torsión repetitiva de columna lumbar.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "2308",
@@ -686,12 +776,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2000-11-06",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MEZCLAS TERMOPLASTICAS",
+        diagnostico: "23/11/2022: AL MOMENTO ESTABLES, NO REFIERE MOLESTIAS, ACUDE ANUALMENTE A MEDICO HOMEOPATA QUIEN REALIZA TRATAMIENTO CON CELULAS MADRE. DEBE MANTENERSE LAS OBSERVACIONES IMPLEMENTADAS Y MANTENER CO...",
+        restricciones: "No levantar cargar > a 15 kg.2, No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Valorar tratamiento Quirúrgico, Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "52",
         puesto: "EXTRUSOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Valorar tratamiento Quirúrgico", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": true, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "3870",
@@ -701,12 +793,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-04-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "2/12/2022 LABORA EN SEPARACION DE PVC AL MOMENTO ESTABLE",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, No exposición a ruido, No toma de decisiones, Tratamiento médico especialista",
         genero: "Masculino",
         edad: "53",
         puesto: "OBRERO PISA",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "No exposición a ruido", "No toma de decisiones", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4914",
@@ -716,12 +810,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-04-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "2/12/2022 LABORA EN CALZADO CEMENTADO AL MOMENTO ESTABLE, NO REALIZAR MMC",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), No realizar actividades de movimientos repetitivos, No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, No exposición a ruido, Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora",
         genero: "Masculino",
         edad: "59",
         puesto: "OBRERO PISA",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar actividades de movimientos repetitivos", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "No exposición a ruido", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "2470",
@@ -731,12 +827,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2002-07-17",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "2/12/2022 LABORA EN CEMENTADO SE ENCUENTRA ESTABLE,",
+        restricciones: "No levantar cargar > a 5 kg., No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No exposición a ruido, Bajar de peso, No toma de decisiones, Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora",
         genero: "Masculino",
         edad: "44",
         puesto: "OBRERO PISA",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No exposición a ruido", "Bajar de peso", "No toma de decisiones", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": true, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "3121",
@@ -746,12 +844,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2008-12-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "2/12/2022 LABORA EN CEMENTADO SE ENCUENTRA ESTABLE",
+        restricciones: "No levantar cargar > a 5 kg., No manejo de maquinaria / equipos  (elevadores), No realizar actividades de movimientos repetitivos, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No exposición a ruido, No toma de decisiones, Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora",
         genero: "Masculino",
         edad: "40",
         puesto: "OBRERO PISA",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar actividades de movimientos repetitivos", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No exposición a ruido", "No toma de decisiones", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "3899",
@@ -761,12 +861,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2010-06-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "2/12/2022 LABORA EN CEMENTADO SE ENCUENTRA ESTABLE",
+        restricciones: "No levantar cargar > a 5 kg., No manejo de maquinaria / equipos  (elevadores), No realizar actividades de movimientos repetitivos, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No exposición a ruido, No toma de decisiones, Tratamiento médico especialista",
         genero: "Femenino",
         edad: "36",
         puesto: "OBRERO PISA",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar actividades de movimientos repetitivos", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No exposición a ruido", "No toma de decisiones", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "5564",
@@ -776,12 +878,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2013-06-17",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "2/12/2022 LABORA EN CEMENTADO SE ENCUENTRA ESTABLE, NO MANIPULAR CARGAS",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista",
         genero: "Masculino",
         edad: "40",
         puesto: "OBRERO PISA",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "3164",
@@ -791,12 +895,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2009-05-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "2/12/2022 LABORA EN CEMENTADO SE ENCUENTRA ESTABLE",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), No realizar actividades de movimientos repetitivos, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No exposición a ruido, No toma de decisiones, Tratamiento médico especialista",
         genero: "Masculino",
         edad: "58",
         puesto: "OBRERO PISA",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar actividades de movimientos repetitivos", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No exposición a ruido", "No toma de decisiones", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4696",
@@ -806,12 +912,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-02-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "2/12/2022 LABORA EN CEMENTADO SE ENCUENTRA ESTABLE",
+        restricciones: "No levantar cargar > a 5 kg., No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No exposición a ruido, Bajar de peso, No toma de decisiones, Tratamiento médico especialista",
         genero: "Femenino",
         edad: "45",
         puesto: "OBRERO PISA",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No exposición a ruido", "Bajar de peso", "No toma de decisiones", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": true, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "5345",
@@ -821,12 +929,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2013-01-24",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CENTRO SERVICIOS COMPARTIDOS",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "35",
         puesto: "OBRERO DE MANTENIMIENTO",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4890",
@@ -836,12 +946,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-04-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "16",
+        restricciones: "No exposición a ruido, Tratamiento médico especialista, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "60",
         puesto: "REFILADO",
-        discapacidad: "Auditiva"
+        discapacidad: "Auditiva",
+        restriccionesLista: ["No exposición a ruido", "Tratamiento médico especialista", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "5571",
@@ -851,12 +963,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2013-06-17",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "CONTROLES MENSUALES",
+        restricciones: "No levantar cargar > a 15 kg.2, No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Desvinculación",
         genero: "Masculino",
         edad: "38",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "4498",
@@ -866,12 +980,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2011-10-25",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "16",
+        restricciones: "No realizar trabajos en altura, No realizar trabajos nocturnos, No deportes de alto impacto., Realizar Fisioterapia rehabilitadora, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Femenino",
         edad: "43",
         puesto: "REBABEO",
-        discapacidad: "Visual"
+        discapacidad: "Visual",
+        restriccionesLista: ["No realizar trabajos en altura", "No realizar trabajos nocturnos", "No deportes de alto impacto.", "Realizar Fisioterapia rehabilitadora", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "5431",
@@ -881,12 +997,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2013-05-02",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "26/05/2025: VALORADO EN PREVENTIVA 2025 HIGIENE POSTURAL, CUIDADOS DE COLUMNA, USO ESTRICTO Y PERMAMENTE DE EPPS. NO LEVANTAR PESOS NI CARGAS EXTRALABORAL. EN EL PUESTO ACTUAL DE SERVICIOS INICIALE...",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No exposición a ruido, Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista",
         genero: "Masculino",
         edad: "36",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No exposición a ruido", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": true, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "2428",
@@ -896,12 +1014,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2001-09-28",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MANTENIMIENTO DE PLANTAS",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "49",
         puesto: "OBRERO DE MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "6473",
@@ -911,12 +1031,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2018-04-02",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "17",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "29",
         puesto: "OBRERO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "4323",
@@ -926,12 +1048,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2011-04-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en INDUSTRIAS DIVERSAS",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "42",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "7231",
@@ -941,12 +1065,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2022-12-19",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "07/03/2024: PACIENTE CON DIAGNOSTICO DE CA DE TIROIDES INTERVENIDA QX.  PENDIENTE YODORADIOACTIVO LIMITACIONES: LIMITAR ACTIVIDADES QUE DEMANDEN EXPOSICION A QUIMICOS, SOLVENTES. RECOMENDACIONES: C...",
+        restricciones: "No levantar cargar > a 15 kg.2, No exposicion a Químicos, No exposición material particulador, Bajar de peso, Tratamiento médico especialista",
         genero: "Femenino",
         edad: "42",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No exposicion a Químicos", "No exposición material particulador", "Bajar de peso", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": true, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4984",
@@ -956,12 +1082,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-07-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "07/03/2024: PACIENTE CON DIAGNOSTICO DE CA DE TIROIDES EN ESPERA DE INTERVENCION QX.  PENDIENTE. LIMITACIONES: LIMITAR ACTIVIDADES QUE DEMANDEN EXPOSICION A QUIMICOS, SOLVENTES. RECOMENDACIONES: CO...",
+        restricciones: "No levantar cargar > a 15 kg.2, No exposicion a Químicos, No exposición material particulador, Tratamiento médico especialista",
         genero: "Femenino",
         edad: "47",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No exposicion a Químicos", "No exposición material particulador", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": true, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4878",
@@ -971,12 +1099,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-04-09",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "07/03/2024: PACIENTE CON DISCAPACIDAD VISUAL DEL 30%, POR ASTIGMATISMO OJO DERECHO, ESTRABISMO OJO IZQUIERDO, CATARATA CONGENITA OJO IZQUIERDO.  DIAGNOSTICADA EN EL 2017 DE LINFOMA DIFUSO TRATADA C...",
+        restricciones: "No manejo de maquinaria / equipos  (elevadores), No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No exposicion a Químicos, No exposición material particulador, No realizar trabajos nocturnos, Tratamiento médico especialista, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Femenino",
         edad: "38",
         puesto: "OBRERO PISA",
-        discapacidad: "Visual"
+        discapacidad: "Visual",
+        restriccionesLista: ["No manejo de maquinaria / equipos  (elevadores)", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No exposicion a Químicos", "No exposición material particulador", "No realizar trabajos nocturnos", "Tratamiento médico especialista", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": true, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "3100",
@@ -986,12 +1116,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2008-09-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "07/03/2024: PACIENTE CON DISCAPACIDAD VISUAL DEL 33%. PERDIDA DE OJO DERECHO POR ACCIDENTE DOMESTICO, COLOCADO PROTESIS A LOS 17 AÑOS DE EDAD.  LIMITACION: ACTIVIDADES A DETALLE QUE DEMANDEN EXIGEN...",
+        restricciones: "No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No realizar trabajos nocturnos, Tratamiento médico especialista",
         genero: "Masculino",
         edad: "43",
         puesto: "OBRERO PISA",
-        discapacidad: "Visual"
+        discapacidad: "Visual",
+        restriccionesLista: ["No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No realizar trabajos nocturnos", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4678",
@@ -1001,12 +1133,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-02-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "07/03/2024: TRABAJADOR CON DISCAPACIDAD FISICA DEL 30%. POR SECUELA DE OSTEOMIELITIS.  POR LO CUAL TIENE LIMITACION FUNCIONAL POR ANQUILOSIS ARTICULAR DE RODILLA IZQ.  LIMITACION: ASCENDER Y DESCEN...",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No manejo de maquinaria / equipos  (elevadores), No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista",
         genero: "Masculino",
         edad: "58",
         puesto: "OBRERO PISA",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No manejo de maquinaria / equipos  (elevadores)", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "5253",
@@ -1016,12 +1150,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-11-19",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "20/05/2024: SE REALIZA EXAMEN DE REINTEGRO POSTERIOR A 40 DIAS DE REPOSO, PACIENTE AL MOMENTO ASINTOMATICA, REFIERE MEJORIA, NO PARESTECIAS, SE REINTEGRA MANTENIENDO LAS LIMITACIONES HASTA JULIO DE...",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No realizar actividades de movimientos repetitivos, Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Femenino",
         edad: "43",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No realizar actividades de movimientos repetitivos", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "7195",
@@ -1031,12 +1167,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2022-11-22",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en CALZADO INYECTADO AL CORTE",
+        diagnostico: "12",
+        restricciones: "Sin restricciones específicas registradas (Limitación temporal)",
         genero: "Masculino",
         edad: "32",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: [],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "4255",
@@ -1046,12 +1184,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2011-07-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALIDAD EN PLANTA",
+        diagnostico: "16",
+        restricciones: "Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular",
         genero: "Masculino",
         edad: "37",
         puesto: "VERIFICADOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "2157",
@@ -1061,12 +1201,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "1995-07-05",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en METROLOGIA",
+        diagnostico: "SALIDO",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "52",
         puesto: "METROLOGIA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4549",
@@ -1076,12 +1218,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2011-11-16",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MANTENIMIENTO DE PLANTAS",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "37",
         puesto: "TECNICO DE MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "2221",
@@ -1091,12 +1235,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "1997-07-24",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "54",
         puesto: "No especificado",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "7394",
@@ -1106,12 +1252,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2023-03-06",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "2/8/2024 COLABORADOR SE ENCUENTRA EN TRATAMIENTO CON NEUROLOGIA, AL MOMENTO CON AMNESIA ANTEROGRADA, SE RECOMIENDA MANTENER EN SEPARACION DE PVC",
+        restricciones: "No levantar cargar > a 15 kg.2, No manejo de maquinaria / equipos  (elevadores), No realizar trabajos en altura, No toma de decisiones, Tratamiento médico especialista, Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "25",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No manejo de maquinaria / equipos  (elevadores)", "No realizar trabajos en altura", "No toma de decisiones", "Tratamiento médico especialista", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": true, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "2102",
@@ -1121,12 +1269,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "1991-01-14",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "15/11/2024 SE RECIBE RESONANCIA MAGNETICA  QUE CONFIRMA TRANSTORNO LUMBAR , DISCOPATIA + ESPONDILOSIS + ANTEROLISTESIS, SE DECIDE RESTRICCIONES DEFINITAS, CAMBIOPUESTO DE TRABAJO  A TERMINADA + SEG...",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "59",
         puesto: "OBRERO INYECTOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "2644",
@@ -1136,12 +1286,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2006-06-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "41",
         puesto: "AYUDANTE LOGISTICO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "5405",
@@ -1151,12 +1303,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2013-03-15",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MANTENIMIENTO DE PLANTAS",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "32",
         puesto: "OBRERO MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "2560",
@@ -1166,12 +1320,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2005-04-15",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en INDUSTRIAS DIVERSAS",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "43",
         puesto: "Obrero Molinero Calandrador CAUCHO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4031",
@@ -1181,12 +1337,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2010-10-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en INDUSTRIAS DIVERSAS",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "34",
         puesto: "OBRERO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "2119",
@@ -1196,12 +1354,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "1991-06-03",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en INDUSTRIAS DIVERSAS",
+        diagnostico: "SALIDO",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "59",
         puesto: "LIDER A",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "5440",
@@ -1211,12 +1371,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2013-05-13",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MEZCLAS TERMOPLASTICAS",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "36",
         puesto: "EXTRUSOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2544",
@@ -1226,12 +1388,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2005-04-01",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "49",
         puesto: "ELEVADORISTA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "5186",
@@ -1241,12 +1405,14 @@ const empleados = [
         gerencia: "Patricio Toro",
         fechaInicio: "2012-10-22",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en DISEÑO",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas., Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "43",
         puesto: "OPERADOR PROTOTIPO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "2083",
@@ -1256,12 +1422,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "1990-06-04",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "SALIDO",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No realizar actividades de movimientos repetitivos, No flexión, torsión repetitiva de columna lumbar., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular",
         genero: "Masculino",
         edad: "59",
         puesto: "AYUDANTE LOGISTICO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No realizar actividades de movimientos repetitivos", "No flexión, torsión repetitiva de columna lumbar.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "3087",
@@ -1271,12 +1439,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2008-11-12",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "28",
+        restricciones: "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No realizar trabajos nocturnos, No deportes de alto impacto., Valorar tratamiento Quirúrgico, Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "41",
         puesto: "OBRERO EMPAQUE",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No realizar trabajos nocturnos", "No deportes de alto impacto.", "Valorar tratamiento Quirúrgico", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": true, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "2238",
@@ -1286,12 +1456,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "1999-02-23",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO MOLDEADO POR INYECCIÓN",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Valorar tratamiento Quirúrgico, Tratamiento médico especialista, Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "52",
         puesto: "OBRERO EMPAQUE",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Valorar tratamiento Quirúrgico", "Tratamiento médico especialista", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": true, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "2540",
@@ -1301,12 +1473,14 @@ const empleados = [
         gerencia: "Andres Cisneros",
         fechaInicio: "2005-01-12",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en COSTOS Y PRESUPUESTOS",
+        diagnostico: "2025-05-14 00:00:00",
+        restricciones: "No levantar cargar > a 15 kg.2, No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, No deportes de alto impacto., Tratamiento médico especialista, Movilizar a puesto de trabajo que no realice tareas restringidas., Desvinculación",
         genero: "Masculino",
         edad: "47",
         puesto: "ANALISTA PROCESOS",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "No deportes de alto impacto.", "Tratamiento médico especialista", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "4439",
@@ -1316,12 +1490,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2011-09-01",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en LOGISTICA",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Bajar de peso, No deportes de alto impacto., Valorar tratamiento Quirúrgico, Tratamiento médico especialista, Movilizar a puesto de trabajo que no realice tareas restringidas., Desvinculación",
         genero: "Masculino",
         edad: "44",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Bajar de peso", "No deportes de alto impacto.", "Valorar tratamiento Quirúrgico", "Tratamiento médico especialista", "Movilizar a puesto de trabajo que no realice tareas restringidas.", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": true, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "6919",
@@ -1331,12 +1507,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2022-05-19",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en CALZADO CEMENTADO",
+        diagnostico: "20/05/2025: ECO: EMBARAZO 08 SEMANAS 0 DIAS +/- 4 DIAS. FPP 23/12/2025, FETO VIVO.   (ECOGRAFIA NO CONCUERDA CON EDAD GESTACIONAL POR FUM. PACIENTE SEGURA DE FECHA DE ULTIMA MENSTRUACION. PRUEBA DE...",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, No exposicion a Químicos, Tratamiento médico especialista",
         genero: "Femenino",
         edad: "32",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "No exposicion a Químicos", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "2520",
@@ -1346,12 +1524,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2004-08-17",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en LOGISTICA",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 5 kg., No manejo de maquinaria / equipos  (elevadores), No realizar actividades de movimientos repetitivos, No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, Evitar trabajo en superficies irregulares o con vibración., No exposicion a Químicos, No realizar trabajos nocturnos, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "46",
         puesto: "OBRERO MOD",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No manejo de maquinaria / equipos  (elevadores)", "No realizar actividades de movimientos repetitivos", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "Evitar trabajo en superficies irregulares o con vibración.", "No exposicion a Químicos", "No realizar trabajos nocturnos", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": true, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "7414",
@@ -1361,12 +1541,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2023-03-17",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MANTENIMIENTO DE PLANTAS",
+        diagnostico: "12",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No realizar actividades de movimientos repetitivos, No flexión, torsión repetitiva de columna lumbar., Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "33",
         puesto: "TECNICO DE MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No realizar actividades de movimientos repetitivos", "No flexión, torsión repetitiva de columna lumbar.", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": true, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "6991",
@@ -1376,12 +1558,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2022-06-13",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en CALZADO CEMENTADO",
+        diagnostico: "31/07/2025: eco obstetrico con marcadores cromosomicos 22/07/2025: ecograficamente embarazo de 13.4 semanas si compatible con amenorrea de 15.3 sem con peso de 78 gr. placenta anterior grado 0, flo...",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, No exposicion a Químicos, Tratamiento médico especialista",
         genero: "Femenino",
         edad: "31",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "No exposicion a Químicos", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "7098",
@@ -1391,12 +1575,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2022-08-23",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en LOGISTICA",
+        diagnostico: "12",
+        restricciones: "Sin restricciones específicas registradas (Limitación temporal)",
         genero: "Masculino",
         edad: "28",
         puesto: "AYUDANTE LOGISTICO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: [],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "6977",
@@ -1406,12 +1592,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2022-06-07",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "06/01/2026: PACIENTE SE REINTEGRA POSTERIOR A TRATAMIENTO DE YODO RADIOACTIVO",
+        restricciones: "No exposicion a Químicos, No exposición material particulador, Tratamiento médico especialista",
         genero: "Masculino",
         edad: "36",
         puesto: "TROQUELADOR",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No exposicion a Químicos", "No exposición material particulador", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": true, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "7010",
@@ -1421,12 +1609,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2022-07-01",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en CALZADO CEMENTADO",
+        diagnostico: "05/01/2026:  PACIENTE EN PERIODO DE MATERNIDAD ESTABLE",
+        restricciones: "No levantar cargar > a 5 kg., No empuje / tracción., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, No realizar trabajos en altura, No exposicion a Químicos, Tratamiento médico especialista",
         genero: "Femenino",
         edad: "30",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 5 kg.", "No empuje / tracción.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "No realizar trabajos en altura", "No exposicion a Químicos", "Tratamiento médico especialista"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": true, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": true, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": true, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "6721",
@@ -1436,12 +1626,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2022-03-25",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en LOGISTICA",
+        diagnostico: "18",
+        restricciones: "No levantar cargar > a 15 kg.2, No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Desvinculación",
         genero: "Masculino",
         edad: "32",
         puesto: "AYUDANTE LOGISTICO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "7241",
@@ -1451,12 +1643,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2022-12-20",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en MATRICERIA",
+        diagnostico: "12",
+        restricciones: "Sin restricciones específicas registradas (Limitación temporal)",
         genero: "Masculino",
         edad: "24",
         puesto: "MATRICERO 1",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: [],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": false, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     },
     {
         codigo: "5620",
@@ -1466,12 +1660,14 @@ const empleados = [
         gerencia: "Jose Cuesta Vasconez",
         fechaInicio: "2013-07-08",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en LOGISTICA",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Desvinculación",
         genero: "Masculino",
         edad: "37",
         puesto: "AYUDANTE LOGISTICA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "2858",
@@ -1481,12 +1677,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2007-06-04",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MEZCLAS TERMOPLASTICAS",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Desvinculación",
         genero: "Masculino",
         edad: "45",
         puesto: "OBRERO PISA",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "4571",
@@ -1496,12 +1694,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2011-11-21",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en CALZADO CEMENTADO",
+        diagnostico: "05/01/2026: PACIENTE CON MEDICACION QUE INTERFIERE CON ESTADO DE VIGILIA EN LAS NOCHES, TIENE LA RESTRICCION DE VELADAS.",
+        restricciones: "No realizar trabajos nocturnos, Bajar de peso, No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Desvinculación",
         genero: "Masculino",
         edad: "55",
         puesto: "APARADO AUTOMATAS",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No realizar trabajos nocturnos", "Bajar de peso", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": false, "No empuje / tracción.": false, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": false, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": false, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": true, "Bajar de peso": true, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": true}
     },
     {
         codigo: "6257",
@@ -1511,12 +1711,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2015-10-26",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en SERVICIOS INDUSTRIALES",
+        diagnostico: "17",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)., Desvinculación",
         genero: "Masculino",
         edad: "36",
         puesto: "TECNICO DE MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).", "Desvinculación"],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": true}
     },
     {
         codigo: "2318",
@@ -1526,12 +1728,14 @@ const empleados = [
         gerencia: "Ivan Alvarez",
         fechaInicio: "2000-11-27",
         fechaFin: null,
-        diagnostico: "Restricción laboral - Definitiva",
-        restricciones: "Empleado con limitación definitiva en MANTENIMIENTO DE PLANTAS",
+        diagnostico: "28",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Tratamiento médico especialista, Realizar Fisioterapia rehabilitadora, Realizar Fisioterapia para fortalecimiento muscular, Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).",
         genero: "Masculino",
         edad: "49",
         puesto: "TECNICO DE MANTENIMIENTO",
-        discapacidad: "No"
+        discapacidad: "No",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Tratamiento médico especialista", "Realizar Fisioterapia rehabilitadora", "Realizar Fisioterapia para fortalecimiento muscular", "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico)."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": false, "Evitar subir y bajar gradas frecuentemente": false, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": true, "Realizar Fisioterapia rehabilitadora": true, "Realizar Fisioterapia para fortalecimiento muscular": true, "Movilizar a puesto de trabajo que no realice tareas restringidas.": false, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": true, "Desvinculación": false}
     },
     {
         codigo: "4780",
@@ -1541,12 +1745,14 @@ const empleados = [
         gerencia: "Juan Ignacio Sevilla",
         fechaInicio: "2012-02-15",
         fechaFin: "2025-06-30",
-        diagnostico: "Restricción laboral - Temporal",
-        restricciones: "Empleado con limitación temporal en CALIDAD EN PLANTA",
+        diagnostico: "16",
+        restricciones: "No levantar cargar > a 15 kg.2, No empuje / tracción., No flexión, torsión repetitiva de columna lumbar., No permanecer de pie o sentado por +60 min. continuos sin pausas laborales, Evitar subir y bajar gradas frecuentemente, Evitar trabajo en superficies irregulares o con vibración., No deportes de alto impacto., Movilizar a puesto de trabajo que no realice tareas restringidas.",
         genero: "Masculino",
         edad: "41",
         puesto: "SUPERVISOR CALDIAD",
-        discapacidad: "Física"
+        discapacidad: "Física",
+        restriccionesLista: ["No levantar cargar > a 15 kg.2", "No empuje / tracción.", "No flexión, torsión repetitiva de columna lumbar.", "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales", "Evitar subir y bajar gradas frecuentemente", "Evitar trabajo en superficies irregulares o con vibración.", "No deportes de alto impacto.", "Movilizar a puesto de trabajo que no realice tareas restringidas."],
+        restriccionesDetalle: {"No levantar cargar > a 5 kg.": false, "No levantar cargar > a 15 kg.2": true, "No empuje / tracción.": true, "No manejo de maquinaria / equipos  (elevadores)": false, "No realizar actividades de movimientos repetitivos": false, "No flexión, torsión repetitiva de columna lumbar.": true, "No permanecer de pie o sentado por +60 min. continuos sin pausas laborales": true, "Evitar subir y bajar gradas frecuentemente": true, "No realizar trabajos en altura": false, "Evitar trabajo en superficies irregulares o con vibración.": true, "No exposicion a Químicos": false, "No exposición a ruido": false, "No exposición material particulador": false, "Evitar exposición solar": false, "No realizar trabajos nocturnos": false, "Bajar de peso": false, "No toma de decisiones": false, "No deportes de alto impacto.": true, "Valorar tratamiento Quirúrgico": false, "Tratamiento médico especialista": false, "Realizar Fisioterapia rehabilitadora": false, "Realizar Fisioterapia para fortalecimiento muscular": false, "Movilizar a puesto de trabajo que no realice tareas restringidas.": true, "Cambio de planta a un puesto acorde a sus restricciones (tareas que no demanden riesgo físico, ergonómico).": false, "Desvinculación": false}
     }
 ];
 
