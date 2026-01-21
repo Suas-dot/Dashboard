@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Restricciones Laborales - Plasticaucho</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🏭 Dashboard de Restricciones Laborales</h1>
+                <p class="subtitle">Plasticaucho Industrial - Gestión de Salud Ocupacional</p>
+            </div>
+            <button class="export-btn" onclick="exportToExcel()">
+                📊 Exportar a Excel
+            </button>
+        </header>
+
+        <!-- Filtros -->
+        <section class="filters-section">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="filterArea">🏢 Área</label>
+                    <select id="filterArea" onchange="applyFilters()">
+                        <option value="">Todas las áreas</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterGerencia">👔 Gerencia</label>
+                    <select id="filterGerencia" onchange="applyFilters()">
+                        <option value="">Todas las gerencias</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterTipo">⏱️ Tipo de Restricción</label>
+                    <select id="filterTipo" onchange="applyFilters()">
+                        <option value="">Todos los tipos</option>
+                        <option value="Temporal">Temporal</option>
+                        <option value="Definitiva">Definitiva</option>
+                    </select>
+                </div>
+                <button class="reset-btn" onclick="resetFilters()">🔄 Limpiar Filtros</button>
+            </div>
+        </section>
+
+        <!-- KPIs -->
+        <section class="kpis">
+            <div class="kpi-card total">
+                <div class="kpi-icon">👥</div>
+                <div class="kpi-content">
+                    <h3 id="kpiTotal">103</h3>
+                    <p>Total Restricciones</p>
+                </div>
+            </div>
+            <div class="kpi-card temporal">
+                <div class="kpi-icon">⏳</div>
+                <div class="kpi-content">
+                    <h3 id="kpiTemporal">0</h3>
+                    <p>Temporales</p>
+                </div>
+            </div>
+            <div class="kpi-card definitiva">
+                <div class="kpi-icon">🔒</div>
+                <div class="kpi-content">
+                    <h3 id="kpiDefinitiva">0</h3>
+                    <p>Definitivas</p>
+                </div>
+            </div>
+            <div class="kpi-card percentage">
+                <div class="kpi-icon">📊</div>
+                <div class="kpi-content">
+                    <h3 id="kpiPercentage">0%</h3>
+                    <p>% Temporales</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gráficos -->
+        <section class="charts-section">
+            <div class="chart-container">
+                <h3>Distribución por Tipo</h3>
+                <canvas id="tipoChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Restricciones por Área</h3>
+                <canvas id="areaChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Restricciones por Gerencia</h3>
+                <canvas id="gerenciaChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Tabla de Detalles -->
+        <section class="table-section">
+            <div class="table-header">
+                <h3>📋 Detalle de Empleados con Restricciones</h3>
+                <input type="text" id="searchInput" placeholder="🔍 Buscar por código o nombre..." onkeyup="searchTable()">
+            </div>
+            <div class="table-wrapper">
+                <table id="employeeTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">Código ↕</th>
+                            <th onclick="sortTable(1)">Nombre ↕</th>
+                            <th onclick="sortTable(2)">Tipo ↕</th>
+                            <th onclick="sortTable(3)">Área ↕</th>
+                            <th onclick="sortTable(4)">Gerencia ↕</th>
+                            <th onclick="sortTable(5)">Fecha Inicio ↕</th>
+                            <th onclick="sortTable(6)">Fecha Fin ↕</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Se llenará dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal de Detalles -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Detalles del Empleado</h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

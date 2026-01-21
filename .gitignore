@@ -1,0 +1,18 @@
+# Excel files
+*.xlsx
+*.xls
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary data files
+empleados_reales.json
+estructura_excel.txt
+debug_structure.py
+explore_data.py
+extract_real_data.py
+generate_datajs.py
+create_excel.py
+create_excel_real.py
+create_excel_simple.py
