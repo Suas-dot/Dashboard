@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <!-- Header -->
@@ -42,6 +44,15 @@
                         <option value="">Todos los tipos</option>
                         <option value="Temporal">Temporal</option>
                         <option value="Definitiva">Definitiva</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterClassificacion">📋 Nivel de Acción</label>
+                    <select id="filterClassificacion" onchange="applyFilters()">
+                        <option value="">Todas las acciones</option>
+                        <option value="Inmediata">Acc. Inmediatas</option>
+                        <option value="MedioPlazo">Acc. Medio Plazo</option>
+                        <option value="Definitiva">Acc. Definitivas</option>
                     </select>
                 </div>
                 <button class="reset-btn" onclick="resetFilters()">🔄 Limpiar Filtros</button>
@@ -100,7 +111,8 @@
         <section class="table-section">
             <div class="table-header">
                 <h3>📋 Detalle de Empleados con Restricciones</h3>
-                <input type="text" id="searchInput" placeholder="🔍 Buscar por código o nombre..." onkeyup="searchTable()">
+                <input type="text" id="searchInput" placeholder="🔍 Buscar por código o nombre..."
+                    onkeyup="searchTable()">
             </div>
             <div class="table-wrapper">
                 <table id="employeeTable">
@@ -136,4 +148,5 @@
     <script src="data.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

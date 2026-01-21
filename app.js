@@ -38,12 +38,24 @@ function applyFilters() {
     const areaFilter = document.getElementById('filterArea').value;
     const gerenciaFilter = document.getElementById('filterGerencia').value;
     const tipoFilter = document.getElementById('filterTipo').value;
+    const classFilter = document.getElementById('filterClassificacion').value;
 
     empleadosFiltrados = window.empleadosData.filter(emp => {
         const matchArea = !areaFilter || emp.area === areaFilter;
         const matchGerencia = !gerenciaFilter || emp.gerencia === gerenciaFilter;
         const matchTipo = !tipoFilter || emp.tipoRestriccion === tipoFilter;
-        return matchArea && matchGerencia && matchTipo;
+
+        // Filtro por Clasificación de Nivel de Acción
+        let matchClass = true;
+        if (classFilter === 'Inmediata') {
+            matchClass = emp.restriccionesInmediatas && emp.restriccionesInmediatas.length > 0;
+        } else if (classFilter === 'MedioPlazo') {
+            matchClass = emp.restriccionesMedioPlazo && emp.restriccionesMedioPlazo.length > 0;
+        } else if (classFilter === 'Definitiva') {
+            matchClass = emp.restriccionesDefinitivas && emp.restriccionesDefinitivas.length > 0;
+        }
+
+        return matchArea && matchGerencia && matchTipo && matchClass;
     });
 
     updateDashboard();
@@ -55,6 +67,7 @@ function resetFilters() {
     document.getElementById('filterArea').value = '';
     document.getElementById('filterGerencia').value = '';
     document.getElementById('filterTipo').value = '';
+    document.getElementById('filterClassificacion').value = '';
     document.getElementById('searchInput').value = '';
     empleadosFiltrados = [...window.empleadosData];
     updateDashboard();
@@ -368,12 +381,32 @@ function showDetails(empleado) {
             <div class="detail-label">Restricciones:</div>
             <div class="detail-value">
                 ${empleado.restriccionesLista && empleado.restriccionesLista.length > 0
-            ? `<ul style="margin: 0; padding-left: 20px;">
-                        ${empleado.restriccionesLista.map(r => `<li>${r}</li>`).join('')}
-                       </ul>`
-            : empleado.restricciones}
-            </div>
-        </div>
+                ${
+        (function () {
+            let html = '';
+            if (empleado.restriccionesInmediatas && empleado.restriccionesInmediatas.length > 0) {
+                html += `<strong>⚠️ Acciones Inmediatas:</strong><ul style="margin: 5px 0 10px 0; padding-left: 20px;">
+                                ${empleado.restriccionesInmediatas.map(r => `<li>${r}</li>`).join('')}</ul>`;
+            }
+            if (empleado.restriccionesMedioPlazo && empleado.restriccionesMedioPlazo.length > 0) {
+                html += `<strong>🗓️ Medio Plazo:</strong><ul style="margin: 5px 0 10px 0; padding-left: 20px;">
+                                ${empleado.restriccionesMedioPlazo.map(r => `<li>${r}</li>`).join('')}</ul>`;
+            }
+            if (empleado.restriccionesDefinitivas && empleado.restriccionesDefinitivas.length > 0) {
+                html += `<strong>🚫 Definitivas:</strong><ul style="margin: 5px 0 10px 0; padding-left: 20px;">
+                                ${empleado.restriccionesDefinitivas.map(r => `<li>${r}</li>`).join('')}</ul>`;
+            }
+            // Fallback si no hay clasificadas pero hay texto general
+            if (!html && empleado.restricciones) {
+                html = empleado.restricciones;
+            }
+            return html;
+        })()
+    }
+            : empleado.restricciones
+}
+            </div >
+        </div >
     `;
 
     modal.style.display = 'block';
@@ -398,7 +431,7 @@ function formatDate(dateString) {
     const day = String(date.getDate() + 1).padStart(2, '0');
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const year = date.getFullYear();
-    return `${day}/${month}/${year}`;
+    return `${ day } /${month}/${ year } `;
 }
 
 // Exportar a Excel
@@ -487,8 +520,8 @@ function exportToExcel() {
             { 'Indicador': 'Total de Restricciones', 'Valor': empleadosFiltrados.length },
             { 'Indicador': 'Restricciones Temporales', 'Valor': temporales },
             { 'Indicador': 'Restricciones Definitivas', 'Valor': definitivas },
-            { 'Indicador': '% Temporales', 'Valor': empleadosFiltrados.length > 0 ? `${((temporales / empleadosFiltrados.length) * 100).toFixed(1)}%` : '0%' },
-            { 'Indicador': '% Definitivas', 'Valor': empleadosFiltrados.length > 0 ? `${((definitivas / empleadosFiltrados.length) * 100).toFixed(1)}%` : '0%' }
+            { 'Indicador': '% Temporales', 'Valor': empleadosFiltrados.length > 0 ? `${ ((temporales / empleadosFiltrados.length) * 100).toFixed(1) }% ` : '0%' },
+            { 'Indicador': '% Definitivas', 'Valor': empleadosFiltrados.length > 0 ? `${ ((definitivas / empleadosFiltrados.length) * 100).toFixed(1) }% ` : '0%' }
         ];
 
         const wsResumen = XLSX.utils.json_to_sheet(resumen);
@@ -519,7 +552,7 @@ function exportToExcel() {
 
         // Descargar archivo (Método robusto usando Blob)
         const fecha = new Date().toISOString().split('T')[0];
-        const fileName = `Restricciones_Laborales_Plasticaucho_${fecha}.xlsx`;
+        const fileName = `Restricciones_Laborales_Plasticaucho_${ fecha }.xlsx`;
 
         console.log('Generando archivo:', fileName);
 
@@ -544,13 +577,13 @@ function exportToExcel() {
         document.body.removeChild(anchor);
 
         // Mostrar mensaje de éxito
-        alert(`✅ Archivo generado exitosamente!\n\n📊 ${empleadosFiltrados.length} empleados exportados\n📁 Archivo: ${fileName}\n\nLa descarga debería comenzar automáticamente.`);
+        alert(`✅ Archivo generado exitosamente!\n\n📊 ${ empleadosFiltrados.length } empleados exportados\n📁 Archivo: ${ fileName } \n\nLa descarga debería comenzar automáticamente.`);
 
         console.log('Exportación completada exitosamente');
 
     } catch (error) {
         console.error('Error al exportar a Excel:', error);
-        alert(`❌ Error al exportar a Excel:\n\n${error.message}\n\nPor favor, intente nuevamente o contacte al administrador.`);
+        alert(`❌ Error al exportar a Excel: \n\n${ error.message } \n\nPor favor, intente nuevamente o contacte al administrador.`);
     }
 }
 
